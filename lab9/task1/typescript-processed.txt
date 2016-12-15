@@ -1,0 +1,330 @@
+Joshua Steward
+10/27/16
+Lab 9 Task 1
+
+
+
+Commentary/Questions
+
+
+
+1. Page size of operating system: 4096
+
+2. The range of offset values that are valid for accessing the content of your files is 0 - 22662
+
+3. What causes the program to crash when certain offset values are tried?
+
+Anything below 4096, which is the SC_PAGESIZE value given to the pagesize to use, will cause the program to crash with a segmentation fault. Before it even hits the error for if the data is less than the page size, it gives a seg fault. The OS works with pages, so if the length of the offset is less than the page length, it will raise it automatically.
+
+4. For what values does the program not crash?
+
+Less than 4096, which is the size of the page assigned to the process. 
+
+
+Task 1 Typescript
+
+
+Script started on Thu 27 Oct 2016 12:35:46 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ls
+CMakeLists.txt	data.txt  main.cpp  mem  memoryMappedFile.c  typescript.txt
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gcc memoryMappedFile.c -
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 10
+Byte at offset 10 is 'p'
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 20000
+Byte at offset 20000 is 'e'
+Byte at offset 20000 is 'e'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 20
+Byte at offset 20 is 'e'
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: 200
+Failed to open file!: No such file or directory
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 2000
+Byte at offset 2000 is 'v'
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: 4000
+Failed to open file!: No such file or directory
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 10000
+Byte at offset 10000 is 'M'
+Byte at offset 10000 is 'M'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 11000
+Byte at offset 11000 is 't'
+Byte at offset 11000 is 't'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 9000
+Byte at offset 9000 is 'n'
+Byte at offset 9000 is 'n'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 7000^[[B
+Byte at offset 7000 is '
+'
+Byte at offset 7000 is '
+'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Byte at offset 5000 is 'n'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ data.txt
+50011
+
+
+
+
+
+data.txt: command not found
+^C
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ data.txt
+data.txt: command not found
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./memtxt
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 50011
+Byte at offset 5001 is 'i'
+Byte at offset 5001 is 'i'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4097
+Byte at offset 4097 is 'N'
+Byte at offset 4097 is 'N'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4096
+Byte at offset 4096 is 'O'
+Byte at offset 4096 is 'O'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4095
+Byte at offset 4095 is '
+'
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ man mmap
+MMAP(2) 		   Linux Programmer's Manual		       MMAP(2)
+
+NAME
+       mmap, munmap - map or unmap files or devices into memory
+
+SYNOPSIS
+       #include <sys/mman.h>
+
+       void *mmap(void *addr, size_t length, int prot, int flags,
+		  int fd, off_t offset);
+       int munmap(void *addr, size_t length);
+
+       See NOTES for information on feature test macro requirements.
+
+DESCRIPTION
+       mmap()  creates a new mapping in the virtual address space of the call‐
+       ing process.  The starting address for the new mapping is specified  in
+       addr.  The length argument specifies the length of the mapping.
+
+       If addr is NULL, then the kernel chooses the address at which to create
+       the mapping; this is the most portable method of creating  a  new  map‐
+       ping.   If  addr  is not NULL, then the kernel takes it as a hint about
+       where to place the mapping; on Linux, the mapping will be created at  a
+ ESCOBlnearbymmpage) boundary.resThe addresspofrthetnewumapping is returned as
+ ESCOBlthegresult(of theecall.ress h for help or q to quit)
+ ESCOBl page mmap(2) line 3 (press h for help or q to quit)
+ ESCOBlThegcontents)ofiaefilepmappingf(ashopposedqtooanuanonymous mapping; see
+ ESCOBlMAP_ANONYMOUS lbelow),prare hinitializedrusing length bytes starting at
+ ESCOBloffsetmoffset innthe files(or othereobject) referred  to  by  the  file
+ ESCOBldescriptor(2fd.inoffsetrmusthbeoa multipleqofotheipage size as returned
+ ESCOBlbyasysconf(_SC_PAGE_SIZE).s h for help or q to quit)
+ ESCOBl page mmap(2) line 9 (press h for help or q to quit)
+ ESCOBlThegprotaargumentedescribessthefdesired memoryoprotection of  the  map‐
+ ESCOBlpinge (and(2mustnenot (conflictfwithetheoopentmodeiof the file).  It is
+ ESCOBleithermPROT_NONEnor1thepbitwisefOR ofloner ortomoret)of	the  following
+ ESCOBlflags:mmap(2) line 13 (press h for help or q to quit)
+ ESCOBl page mmap(2) line 14 (press h for help or q to quit)
+ ESCOBlPROT_EXECp(Pagesnmay5bepexecuted.r help or q to quit)
+ ESCOBl page mmap(2) line 16 (press h for help or q to quit)
+ ESCOBlPROT_READp(Pagesnmay7bepread.h for help or q to quit)
+ ESCOBl page mmap(2) line 18 (press h for help or q to quit)
+ ESCOBlPROT_WRITE(Pagesnmay9bepwritten.or help or q to quit)
+ ESCOBl page mmap(2) line 20 (press h for help or q to quit)
+ ESCOBlPROT_NONEp(Pagesnmay1notrbesaccessed.lp or q to quit)
+ ESCOAlthegmapping;)thiseis2thermosthportablepmethodtofqcreating  a  new  map‐
+ ESCOAlIfaaddrmis(NULL,nthen theekernelochoosesothe address)at which to create
+ ESCOAl page mmap(2) line 20 (press h for help or q to quit)
+ ESCOAladdr. mThe(lengtheargumentsspecifiesetheolength ofithe mapping.
+ ESCOAlinggprocess.) Theestartingsaddress forpthe newomapping is specified  in
+ ESCOAlmmap()mmcreatesiaenew mappinghinotheevirtual address)space of the call‐
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$q./memmap
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4097
+Byte at offset 4097 is 'N'
+Byte at offset 4097 is 'N'
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+memoryMappedFile.c: In function ‘main’:
+memoryMappedFile.c:66:18: error: ‘subCharb’ undeclared (first use in this function)
+     scanf("%c", &subCharb);
+		  ^
+memoryMappedFile.c:66:18: note: each undeclared identifier is reported only once for each function it appears in
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gcc memoryMappedFile.c -o
+memoryMappedFile.c: In function ‘main’:
+memoryMappedFile.c:66:18: error: ‘subCharb’ undeclared (first use in this function)
+     scanf("%c", &subCharb);
+		  ^
+memoryMappedFile.c:66:18: note: each undeclared identifier is reported only once for each function it appears in
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gcc memoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Enter a character to substitute in:
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt^C
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Byte at offset 5000 is 'n'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: 3095
+Failed to open file!: No such file or directory
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 3958
+Byte at offset 3958 is ' '
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+ocmememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ gcc memoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 300
+Byte at offset 300 is '
+'
+Enter a character to substitute in:
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: 5003
+Failed to open file!: No such file or directory
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5046
+Byte at offset 5046 is 'T'
+Enter a character to substitute in:
+Segmentation fault (core dumped)
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is 'i'
+Enter a character to substitute in:
+Segmentation fault (core dumped)
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+memoryMappedFile.c: In function ‘main’:
+memoryMappedFile.c:57:47: error: ‘PROT_WRITEMAP_SHARED’ undeclared (first use in this function)
+     data = mmap(NULL, sbuf.st_size, PROT_READ,PROT_WRITEMAP_SHARED, fd, 0);
+					       ^
+memoryMappedFile.c:57:47: note: each undeclared identifier is reported only once for each function it appears in
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ gcc memoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mem
+ocmememoryMappedFile.c -o
+memoryMappedFile.c: In function ‘main’:
+memoryMappedFile.c:57:12: error: too many arguments to function ‘mmap’
+     data = mmap(NULL, sbuf.st_size, PROT_READ,PROT_WRITE, MAP_SHARED, fd, 0);
+	    ^
+In file included from memoryMappedFile.c:17:0:
+/usr/include/x86_64-linux-gnu/sys/mman.h:57:14: note: declared here
+ extern void *mmap (void *__addr, size_t __len, int __prot,
+	      ^
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+ocmememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is 'i'
+Enter a character to substitute in:
+Byte at offset 5001 is '
+'
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5023
+Byte at offset 5023 is 'l'
+Enter a character to substitute in:
+Byte at offset 5023 is '
+'
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 50012
+Byte at offset 5001 is '
+'
+Enter a character to substitute in: Byte at offset 5001 is '
+'
+oimemdent@NetworkingLab:~/Documents/comp362/lab9/task1$ gccememoryMappedFile.c -o
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ ./mememoryMappedFile.c -o
+
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is '
+'
+Enter a character to substitute in:
+e
+Byte at offset 5001 is 'e'
+cistudent@NetworkingLab:~/Documents/comp362/lab9/task1$ exit
+exit
+
+Script done on Thu 27 Oct 2016 01:19:27 PM PDT

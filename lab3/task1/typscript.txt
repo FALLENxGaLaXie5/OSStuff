@@ -1,0 +1,41 @@
+Script started on Tue 20 Sep 2016 11:55:32 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task1[00m$ ./send & ./receive[K./proc
+I am root! My Name is 1
+I am the parent 7286
+I am root! My Name is 1
+I am the child 7287
+I am the parent 7287
+I am the child 7289
+Nice job! You're at the bottom of the tree!
+I am the parent 7288
+I am the child 7290
+I am the child 7292
+Nice job! You're at the bottom of the tree!
+Nice job! You're at the bottom of the tree!
+1.1.1
+Process Hello Parent! pid is: 7289
+Child Complete
+I am the parent 7287
+1.1.2
+Process Hello Parent! pid is: 7290
+Child Complete
+1.2.2
+Process Hello Parent! pid is: 7292
+Child Complete
+I am the parent 7288
+I am the child 7291
+Nice job! You're at the bottom of the tree!
+1.1
+Process Hello Parent! pid is: 7287
+Child Complete
+I am the parent 7286
+1.2.1
+Process Hello Parent! pid is: 7291
+Child Complete
+1.2
+Process Hello Parent! pid is: 7288
+Child Complete
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task1[00m$ exit
+exit
+
+Script done on Tue 20 Sep 2016 11:55:49 AM PDT

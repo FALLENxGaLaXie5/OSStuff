@@ -1,0 +1,49 @@
+Script started on Mon 17 Oct 2016 07:04:10 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ ls
+[0m[01;32madj[0m    CMakeLists.txt  [01;31mJoshuaStewardLab7Task1.zip[0m  typescript.txt
+adj.c  input.txt       main.cpp
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ ls./adjgcc adj.c -o adj
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ gcc adj.c -o adjls[K./adj
+Vert 0: Aa
+Vert 1: Bbb
+Vert 2: Cccc
+Vert 3: Ddddd
+Aa - Cccc
+Aa - Ddddd
+Bbb - Cccc
+Cccc - Bbb
+Cccc - Ddddd
+Ddddd - Aa
+Ddddd - Cccc
+
+0 0 1 1 
+0 0 1 0 
+0 1 0 1 
+1 0 1 0 
+Checking for cycle from 0, 2
+CYCLE DETECTED!!!! ALERT ALERT ALERT!
+>> DEADLOCKED <<
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ ./adjgcc adj.c -o adj./adj[K > outputx[K.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ ./adj > output.txt[Kgcc adj.c -o adjls[Kgcc adj.c -o adj
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ gcc adj.c -o adj./adj > output.txt[K[K[K[K[K[K[K[K[K[K[K[K[K
+Vert 0: Aa
+Vert 1: Bbb
+Vert 2: Cccc
+Vert 3: Ddddd
+Aa - Bbb
+Bbb - Ddddd
+Ddddd - Cccc
+
+0 1 0 0 
+0 0 0 1 
+0 0 0 0 
+0 0 1 0 
+Checking for cycle from 0, 1
+Checking for cycle from 1, 3
+Checking for cycle from 3, 2
+>> NO DEADLOCK <<
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ ./adjgcc adj.c -o adj[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./adj > output.txt[K > output.txt2.txt[C[C[C[C
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task1[00m$ exit
+exit
+
+Script done on Mon 17 Oct 2016 07:08:26 PM PDT

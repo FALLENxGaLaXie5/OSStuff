@@ -1,0 +1,30 @@
+Script started on Thu 20 Oct 2016 01:33:30 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ ls
+CMakeLists.txt  [0m[01;32mlibgiveMeNum.so[0m  readMe.txt       typescript
+giveMeNum.c     main.cpp         testDyLibMain.c
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ gcc *.c -o testNoLib
+/tmp/cc0MhhBF.o: In function `main':
+testDyLibMain.c:(.text+0x1a): undefined reference to `dlopen'
+testDyLibMain.c:(.text+0x2a): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x55): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x66): undefined reference to `dlsym'
+testDyLibMain.c:(.text+0x7d): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0xcf): undefined reference to `dlclose'
+collect2: error: ld returned 1 exit status
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ gcc -fPIC -shared -nosta rtfiles -o libgiveMeNum.so giveMeNum.c
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ gcc -rdynamic -o testDyL ibMain testDyLibMain.c -ldl
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ nm libG[KgiveMeNum.so
+0000000000201030 D __bss_start
+0000000000200ed0 d _DYNAMIC
+0000000000201030 D _edata
+0000000000201030 D _end
+0000000000000450 T giveMeNum
+0000000000201000 d _GLOBAL_OFFSET_TABLE_
+00000000000004bc r __GNU_EH_FRAME_HDR
+                 U __isoc99_scanf@@GLIBC_2.7
+                 U puts@@GLIBC_2.2.5
+                 U __stack_chk_fail@@GLIBC_2.4
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8/task2[00m$ exit
+exit
+
+Script done on Thu 20 Oct 2016 01:40:57 PM PDT

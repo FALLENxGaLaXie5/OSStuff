@@ -1,0 +1,65 @@
+Script started on Sun 11 Dec 2016 09:40:49 PM PST
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ls
+CMakeLists.txt	disk.h	file.c			       main.cpp
+core		file	JoshuaStewardProject2Snap.zip  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ gccifile.c -o file
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ./filele.c -o file
+Would you like to write a message to memory, or generate a random message to put in memory?
+(w) to write, anything else will generate random string)
+w
+Enter your message:(control+D to finish message)
+hi
+
+hi
+
+
+My first address: 1383
+Num of sectors: 1
+Beginning to write...
+Write done!
+Beginning to read...
+Reading finished!
+
+hi
+
+Message Read: "
+hi
+"
+
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ gccifile.c -o file
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ./filele.c -o file
+Would you like to write a message to memory, or generate a random message to put in memory?
+(w) to write, anything else will generate random string)
+h
+Enter the length of the random string you want:
+500
+?AiX-YlU,?cwWaWNVpsBV1wuOYFf-yy,YGnqo-,hIKanKXx2JPm1'fei4gnwELp0b!N3.e,!OHnVnKGuXqSU9XzW3Mb5U4lVAYe92L8#ceRpmVg9IZjAcIUCRs4uU?NdXR-fm4coFqaRIVg!D3'c8REIGsAj4K1hkWn,g3VMQW0i'Eh'qS!Wsa1w6kcUU31CgLvm.aYLtfTqJxnw!0b503kQ#n7oNRQT0I6Ufko-pElv2-SysTmcF.p!hfnUtA.QF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xseBeginning to write...
+Write done!
+Beginning to read...
+Reading finished!
+?AiX-YlU,?cwWaWNVpsBV1wuOYFf-yy,YGnqo-,hIKanKXx2JPm1'fei4gnwELp0b!N3.e,!OHnVnKGuXqSU9XzW3Mb5U4lVAYe92L8#ceRpmVg9IZjAcIUCRs4uU?NdXR-fm4coFqaRIVg!D3'c8REIGsAj4K1hkWn,g3VMQW0i'Eh'qS!Wsa1w6kcUU31CgLvm.aYLtfTqJxnw!0b503kQ#n7oNRQT0I6Ufko-pElv2-SysTmcF.p!hfnUtA.QF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xseXR-fm4coFqaRIVg!D3'c8REIGsAj4K1hkWn,g3VMQW0i'Eh'qS!Wsa1w6kcUU31CgLvm.aYLtfTqJxnw!0b503kQ#n7oNRQT0I6Ufko-pElv2-SysTmcF.p!hfnUtA.QF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xseF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xsebNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xse
+This was read in from memory address 1383: "?AiX-YlU,?cwWaWNVpsBV1wuOYFf-yy,YGnqo-,hIKanKXx2JPm1'fei4gnwELp0b!N3.e,!OHnVnKGuXqSU9XzW3Mb5U4lVAYe92L8#ceRpmVg9IZjAcIUCRs4uU?NdXR-fm4coFqaRIVg!D3'c8REIGsAj4K1hkWn,g3VMQW0i'Eh'qS!Wsa1w6kcUU31CgLvm.aYLtfTqJxnw!0b503kQ#n7oNRQT0I6Ufko-pElv2-SysTmcF.p!hfnUtA.QF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xseXR-fm4coFqaRIVg!D3'c8REIGsAj4K1hkWn,g3VMQW0i'Eh'qS!Wsa1w6kcUU31CgLvm.aYLtfTqJxnw!0b503kQ#n7oNRQT0I6Ufko-pElv2-SysTmcF.p!hfnUtA.QF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xseF0uLHfGuhpPGYq4OH!Q-,CIOes6.S0LVgC3ke6EZSRoAEb'.PkEfj-rnoUVDDphgo,470sPBG4y,C95aQ6UZ1.J?O2COagr3OeTx,rvzSU7ejVS0hvf83mE''DiLJzxgbNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xsebNa.Cw8dNYVt!xcgpW'Q8?NCBt#IS8lqEml6fQHpxlIwfi!v4K.sJeU,xQ?NHk3J,L-?kC1eOs'T'#LyHFQ!h7GEecaimBRT-NRU??Yj4WA2p.jW'xse"
+
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ls
+CMakeLists.txt	disk.h	file.c			       main.cpp
+core		file	JoshuaStewardProject2Snap.zip  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ./filele.c -o file
+Would you like to write a message to memory, or generate a random message to put in memory?
+(w) to write, anything else will generate random string)
+h
+Enter the length of the random string you want:
+20
+rRx7rc.Ldypd8xSU1-QSBeginning to write...
+Write done!
+Beginning to read...
+Reading finished!
+rRx7rc.Ldypd8xSU1-QS
+This was read in from memory address 1383: "rRx7rc.Ldypd8xSU1-QS"
+
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ ./file > output.txt
+h
+1000
+cistudent@NetworkingLab:~/Documents/comp362/project2/task1$ exit
+exit
+
+Script done on Sun 11 Dec 2016 09:42:42 PM PST

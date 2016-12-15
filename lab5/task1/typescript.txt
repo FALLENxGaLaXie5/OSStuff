@@ -1,0 +1,22 @@
+Script started on Thu 29 Sep 2016 01:03:10 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ ls
+CMakeLists.txt  [0m[01;32mexp[0m  exp.c  input.txt  main.cpp  [01;32mmatrix[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ gcc exp.c -o exp
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ ls
+CMakeLists.txt  [0m[01;32mexp[0m  exp.c  input.txt  main.cpp  [01;32mmatrix[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ lsgcc exp.c -o expls[K./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtgcc matrixDy.c -o matrix[6P./matrix input.txtls[Kgcc exp.c -o expls[K[Klsgcc exp.c -o expls[K[K[K./exp input.txt
+This average will be: 6.000000
+The next average will be: 5.000000
+The next average will be: 5.500000
+The next average will be: 4.666667
+The next average will be: 9.000000
+The next average will be: 9.800000
+The next average will be: 10.333333
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ ex[K[K./exp input.txt > output.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ ls
+CMakeLists.txt  exp.c      main.cpp  output.txt
+[0m[01;32mexp[0m             input.txt  [01;32mmatrix[0m    typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5[00m$ exit
+exit
+
+Script done on Thu 29 Sep 2016 01:03:51 PM PDT

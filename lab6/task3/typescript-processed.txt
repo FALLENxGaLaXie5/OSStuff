@@ -1,0 +1,13 @@
+Script started on Tue 11 Oct 2016 11:46:11 AM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab6/task3$ ls
+CMakeLists.txt	main.cpp  phil	philoBase.c  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab6/task3$ ./phil 10 30 > output.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab6/task3$ ls
+-lpthreadBase.c -o phil -
+cistudent@NetworkingLab:~/Documents/comp362/lab6/task3$ lsc philoBase.c -o phil -
+t/phil 10 30 > output.txt
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab6/task3$ exit
+exit
+
+Script done on Tue 11 Oct 2016 11:46:27 AM PDT

@@ -1,0 +1,15 @@
+Script started on Tue 18 Oct 2016 11:52:24 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task2[00m$ ls
+arrays.c  bank.c  CMakeLists.txt  main.cpp    readMe.txt  testSolvency.c  [0m[01;32m-Wall[0m
+arrays.h  bank.h  in.txt          output.txt  [01;32mtest[0m        typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task2[00m$ ls./test in.txt[Kgcc testSolvency.c bank.cc arrays.c -o test -Wall
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task2[00m$ gcc testSolvency.c bank.cc arrays.c -o test -Wall[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task2[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./test in.txt[K in.txt[K
+St T 15 1 5
+
+*** stack smashing detected ***: ./test terminated
+Aborted (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab7/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab7/task2[00m$ exit
+exit
+
+Script done on Tue 18 Oct 2016 11:52:41 AM PDT

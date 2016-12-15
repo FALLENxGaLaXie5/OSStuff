@@ -1,0 +1,31 @@
+Script started on Thu 29 Sep 2016 02:40:47 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$ ls
+CMakeLists.txt	pri  pri.c  typescript	typescript.txt
+adstudent@NetworkingLab:~/Documents/comp362/lab5/task2$ gcc pri.c -o pri -lpthre
+pri.c: In function ‘main’:
+pri.c:74:50: error: incompatible type for argument 4 of ‘pthread_create’
+	     pthread_create(&tid, &attr, &runner, myPriority);
+						  ^
+In file included from pri.c:6:0:
+/usr/include/pthread.h:233:12: note: expected ‘void * restrict’ but argument is of type ‘PRIORITY {aka enum <anonymous>}’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+	    ^
+adstudent@NetworkingLab:~/Documents/comp362/lab5/task2$ gcc pri.c -o pri -lpthrea
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$ lsc pri.c -o pri -lpthrea
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$ ls
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$
+./pri
+q
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$ ./pri
+e
+g
+r
+
+d
+d
+q
+^C
+cistudent@NetworkingLab:~/Documents/comp362/lab5/task2$ exit
+exit
+
+Script done on Thu 29 Sep 2016 02:42:15 PM PDT

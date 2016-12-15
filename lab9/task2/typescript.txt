@@ -1,0 +1,13 @@
+Script started on Tue 01 Nov 2016 11:54:58 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task2[00m$ exitgcc *c -o main
+/tmp/ccwxU6Tl.o: In function `insert':
+opt.c:(.text+0x10f): multiple definition of `insert'
+/tmp/ccwaRmRu.o:lru.c:(.text+0x10a): first defined here
+/tmp/ccwxU6Tl.o: In function `search':
+opt.c:(.text+0x391): multiple definition of `search'
+/tmp/ccwaRmRu.o:lru.c:(.text+0x295): first defined here
+collect2: error: ld returned 1 exit status
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task2[00m$ gcc *c -o mainexit[K
+exit
+
+Script done on Tue 01 Nov 2016 11:55:08 AM PDT

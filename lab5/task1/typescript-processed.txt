@@ -1,0 +1,22 @@
+Script started on Thu 29 Sep 2016 01:03:10 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ ls
+CMakeLists.txt	exp  exp.c  input.txt  main.cpp  matrix  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ gcc exp.c -o exp
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ ls
+CMakeLists.txt	exp  exp.c  input.txt  main.cpp  matrix  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ ./expxinput.txtpxtmatrix
+This average will be: 6.000000
+The next average will be: 5.000000
+The next average will be: 5.500000
+The next average will be: 4.666667
+The next average will be: 9.000000
+The next average will be: 9.800000
+The next average will be: 10.333333
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ ./exp input.txt > output.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ ls
+CMakeLists.txt	exp.c	   main.cpp  output.txt
+exp		input.txt  matrix    typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab5$ exit
+exit
+
+Script done on Thu 29 Sep 2016 01:03:51 PM PDT

@@ -1,0 +1,304 @@
+Script started on Thu 27 Oct 2016 12:35:46 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ls
+CMakeLists.txt  data.txt  main.cpp  [0m[01;32mmem[0m  memoryMappedFile.c  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc [K memoryMappedFile.c - o mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: D Data    data.txt
+Enter file offset between 0 and 22662: 10
+Byte at offset 10 is 'p'
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: l 20000
+Byte at offset 20000 is 'e'
+Byte at offset 20000 is 'e'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ,.ne[K[K[K[K./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 20
+Byte at offset 20 is 'e'
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./,mem[K[K[K[K[K[K./memgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: 200
+Failed to open file!: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 2000
+Byte at offset 2000 is 'v'
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: 4000
+Failed to open file!: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ d[K./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 20000     10000
+Byte at offset 10000 is 'M'
+Byte at offset 10000 is 'M'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 11000
+Byte at offset 11000 is 't'
+Byte at offset 11000 is 't'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 9000
+Byte at offset 9000 is 'n'
+Byte at offset 9000 is 'n'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: ^[[A^[[B        7000
+Byte at offset 7000 is '
+'
+Byte at offset 7000 is '
+'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Byte at offset 5000 is 'n'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ data.txt
+50001  1    
+
+
+
+
+
+data.txt: command not found
+^C
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ data.txt
+data.txt: command not found
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ data.txt[3P./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 50001  1
+Byte at offset 5001 is 'i'
+Byte at offset 5001 is 'i'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4097
+Byte at offset 4097 is 'N'
+Byte at offset 4097 is 'N'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4096
+Byte at offset 4096 is 'O'
+Byte at offset 4096 is 'O'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4095
+Byte at offset 4095 is '
+'
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ man mmap
+[?1049h[?1h=MMAP(2)                    Linux Programmer's Manual                   MMAP(2)[m
+[m
+[1mNAME[0m[m
+       mmap, munmap - map or unmap files or devices into memory[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<sys/mman.h>[0m[m
+[m
+       [1mvoid[0m [1m*mmap(void[0m [1m*[0m[4maddr[24m[1m,[0m [1msize_t[0m [4mlength[24m[1m,[0m [1mint[0m [4mprot[24m[1m,[0m [1mint[0m [4mflags[24m[1m,[0m[m
+                  [1mint[0m [4mfd[24m[1m,[0m [1moff_t[0m [4moffset[24m[1m);[0m[m
+       [1mint[0m [1mmunmap(void[0m [1m*[0m[4maddr[24m[1m,[0m [1msize_t[0m [4mlength[24m[1m);[0m[m
+[m
+       See NOTES for information on feature test macro requirements.[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmmap[0m()  creates a new mapping in the virtual address space of the call‐[m
+       ing process.  The starting address for the new mapping is specified  in[m
+       [4maddr[24m.  The [4mlength[24m argument specifies the length of the mapping.[m
+[m
+       If [4maddr[24m is NULL, then the kernel chooses the address at which to create[m
+       the mapping; this is the most portable method of creating  a  new  map‐[m
+       ping.   If  [4maddr[24m  is not NULL, then the kernel takes it as a hint about[m
+       where to place the mapping; on Linux, the mapping will be created at  a[m
+[7m Manual page mmap(2) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       nearby  page  boundary.   The address of the new mapping is returned as[m
+[7m Manual page mmap(2) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the result of the call.[m
+[7m Manual page mmap(2) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The contents of a file mapping (as opposed to an anonymous mapping; see[m
+[7m Manual page mmap(2) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mMAP_ANONYMOUS[0m  below),  are  initialized using [4mlength[24m bytes starting at[m
+[7m Manual page mmap(2) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       offset [4moffset[24m in the file (or other object) referred  to  by  the  file[m
+[7m Manual page mmap(2) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       descriptor  [4mfd[24m.  [4moffset[24m must be a multiple of the page size as returned[m
+[7m Manual page mmap(2) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       by [4msysconf(_SC_PAGE_SIZE)[24m.[m
+[7m Manual page mmap(2) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The [4mprot[24m argument describes the desired memory protection of  the  map‐[m
+[7m Manual page mmap(2) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ping  (and  must  not  conflict with the open mode of the file).  It is[m
+[7m Manual page mmap(2) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       either [1mPROT_NONE[0m or the bitwise OR of one  or  more  of  the  following[m
+[7m Manual page mmap(2) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       flags:[m
+[7m Manual page mmap(2) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mPROT_EXEC[0m  Pages may be executed.[m
+[7m Manual page mmap(2) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mPROT_READ[0m  Pages may be read.[m
+[7m Manual page mmap(2) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mPROT_WRITE[0m Pages may be written.[m
+[7m Manual page mmap(2) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mmap(2) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mPROT_NONE[0m  Pages may not be accessed.[m
+[7m Manual page mmap(2) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       the mapping; this is the most portable method of creating  a  new  map‐[m
+[24;1H[K[7m Manual page mmap(2) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       If [4maddr[24m is NULL, then the kernel chooses the address at which to create[m
+[24;1H[K[7m Manual page mmap(2) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page mmap(2) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4maddr[24m.  The [4mlength[24m argument specifies the length of the mapping.[m
+[24;1H[K[7m Manual page mmap(2) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ing process.  The starting address for the new mapping is specified  in[m
+[24;1H[K[7m Manual page mmap(2) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmmap[0m()  creates a new mapping in the virtual address space of the call‐[m
+[24;1H[K[7m Manual page mmap(2) line 16 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ man mmap[3P./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 4097
+Byte at offset 4097 is 'N'
+Byte at offset 4097 is 'N'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memman mmap[3P./memdata.txt[3P./memgcc memoryMappedFile.c -oo mem
+[01m[KmemoryMappedFile.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KmemoryMappedFile.c:66:18:[m[K [01;31m[Kerror: [m[K‘[01m[KsubCharb[m[K’ undeclared (first use in this function)
+     scanf("%c", &subCharb);
+[01;32m[K                  ^[m[K
+[01m[KmemoryMappedFile.c:66:18:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem
+[01m[KmemoryMappedFile.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KmemoryMappedFile.c:66:18:[m[K [01;31m[Kerror: [m[K‘[01m[KsubCharb[m[K’ undeclared (first use in this function)
+     scanf("%c", &subCharb);
+[01;32m[K                  ^[m[K
+[01m[KmemoryMappedFile.c:66:18:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Enter a character to substitute in: 
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt^C
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: 40  5000    data.txt
+Enter file offset between 0 and 22662: 5000
+Byte at offset 5000 is 'n'
+Byte at offset 5000 is 'n'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: 4 3095
+Failed to open file!: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ d[K./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 3958
+Byte at offset 3958 is ' '
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: l 300
+Byte at offset 300 is '
+'
+Enter a character to substitute in: 
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem
+Playing with pages of size 4096
+Enter file name: 5003
+Failed to open file!: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ d[K./mem
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5046
+Byte at offset 5046 is 'T'
+Enter a character to substitute in: 
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is 'i'
+Enter a character to substitute in: 
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+[01m[KmemoryMappedFile.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KmemoryMappedFile.c:57:47:[m[K [01;31m[Kerror: [m[K‘[01m[KPROT_WRITEMAP_SHARED[m[K’ undeclared (first use in this function)
+     data = mmap(NULL, sbuf.st_size, PROT_READ,PROT_WRITEMAP_SHARED, fd, 0);
+[01;32m[K                                               ^[m[K
+[01m[KmemoryMappedFile.c:57:47:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem
+[01m[KmemoryMappedFile.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KmemoryMappedFile.c:57:12:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kmmap[m[K’
+     data = mmap(NULL, sbuf.st_size, PROT_READ,PROT_WRITE, MAP_SHARED, fd, 0);
+[01;32m[K            ^[m[K
+In file included from [01m[KmemoryMappedFile.c:17:0[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/mman.h:57:14:[m[K [01;36m[Knote: [m[Kdeclared here
+ extern void *mmap (void *__addr, size_t __len, int __prot,
+[01;32m[K              ^[m[K
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is 'i'
+Enter a character to substitute in: 
+Byte at offset 5001 is '
+'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5023
+Byte at offset 5023 is 'l'
+Enter a character to substitute in: 
+Byte at offset 5023 is '
+'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 50012 
+Byte at offset 5001 is '
+'
+Enter a character to substitute in: Byte at offset 5001 is '
+'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./memgcc memoryMappedFile.c -oo mem
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ gcc memoryMappedFile.c -oo mem[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ ./mem[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Playing with pages of size 4096
+Enter file name: data.txt
+Enter file offset between 0 and 22662: 5001
+Byte at offset 5001 is '
+'
+Enter a character to substitute in: 
+e
+Byte at offset 5001 is 'e'
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab9/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab9/task1[00m$ exit
+exit
+
+Script done on Thu 27 Oct 2016 01:19:27 PM PDT

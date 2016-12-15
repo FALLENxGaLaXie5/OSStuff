@@ -1,0 +1,33 @@
+Script started on Thu 20 Oct 2016 01:04:51 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ gcc -c giveMeN[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgcc *.c -o testNoLib
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ ls
+CMakeLists.txt  main.cpp   testStatLibMain.c
+giveMeNum.c     [0m[01;32mtestNoLib[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ lsgcc *.c -o testNoLibls[Kcat typescript.txt | perl -pe ''s/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescript-processed.txt[A[9Pscript typescript.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P./test > output.txtscript typescript.txtcat typescript.txt | perl -pe ''s/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescript-processed.txt[Als[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc *.c -o testNoLibls[K[K./testNoLib
+Give me a number: 
+10
+You gave me : 10
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ gcc -c giveMeNum.c -o giveMeNu m.o
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ ar rcs libgiveMeNum.a giveMeNu m.o
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ nm libgiveMeNum.a
+
+giveMeNum.o:
+0000000000000000 T giveMeNum
+                 U __isoc99_scanf
+                 U puts
+                 U __stack_chk_fail
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ gcc testStatLibMain.c -[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kar t libgiveMeNum.a
+giveMeNum.o
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ gcc testT[KStatLibMain.c -
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[K-E or -x required when input is from standard input
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ gcc testStatLibMain.c -L. -lgi veMeNum -o T[KtestStatLib
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ ./testSTat[K[K[KtatLib
+Give me a number: 
+10
+You gave me : 10
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab8[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab8[00m$ exit
+exit
+
+Script done on Thu 20 Oct 2016 01:18:55 PM PDT

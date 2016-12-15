@@ -1,0 +1,192 @@
+Script started on Tue 20 Sep 2016 11:49:03 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ ./send & ./receivegcc npipe_receive.c -o reeceive
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Knpipe_receive.c: No such file or directory
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ gcc npipe_receive.c -o reeceive[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [6P./send & ./receive
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc npipe_receive.c -o reeceive[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [C[C[C[C[C[C[C[C[C[Csend.c -o send [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd task3ls[Kcd task3ls[Kgcc npipe_send.c -o send [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creceive.c -o reeceive[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [6P./send & ./receive
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc npipe_receive.c -o reeceive[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc npipe_receive.c -o reeceive[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc avg_server.c -o serv er
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd1); //creating 1st pipe
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd2);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd3);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd4);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:[m[K In function ‘[01m[KwaitForChillun[m[K’:
+[01m[Kavg_server.c:40:32:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kgetpid[m[K’ [-Wimplicit-function-declaration]
+  printf("I am the parent %d\n",getpid());
+[01;32m[K                                ^[m[K
+[01m[Kavg_server.c:41:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwait[m[K’ [-Wimplicit-function-declaration]
+     if (wait(NULL) < 0)
+[01;32m[K         ^[m[K
+[01m[Kavg_server.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kavg_server.c:51:14:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfork[m[K’ [-Wimplicit-function-declaration]
+  pid_t pid = fork();
+[01;32m[K              ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexeclp[m[K’ [-Wimplicit-function-declaration]
+   execlp("./client", "./client", NULL);
+[01;32m[K   ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+[01m[Kavg_server.c:73:4:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+    execlp("./client", "./client", NULL);
+[01;32m[K    ^[m[K
+[01m[Kavg_server.c:86:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+     execlp("./client", "./client", NULL);
+[01;32m[K     ^[m[K
+[01m[Kavg_server.c:98:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+      execlp("./client", "./client", NULL);
+[01;32m[K      ^[m[K
+[01m[Kavg_server.c:110:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwrite[m[K’ [-Wimplicit-function-declaration]
+  write(fd1[0], argv[1], strlen(argv[1]));
+[01;32m[K  ^[m[K
+[01m[Kavg_server.c:110:25:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstrlen[m[K’ [-Wimplicit-function-declaration]
+  write(fd1[0], argv[1], strlen(argv[1]));
+[01;32m[K                         ^[m[K
+[01m[Kavg_server.c:110:25:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kstrlen[m[K’
+[01m[Kavg_server.c:110:25:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<string.h>[m[K’ or provide a declaration of ‘[01m[Kstrlen[m[K’
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ gcc avg_server.c -o serveer
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd1); //creating 1st pipe
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd2);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd3);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd4);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:[m[K In function ‘[01m[KwaitForChillun[m[K’:
+[01m[Kavg_server.c:40:32:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kgetpid[m[K’ [-Wimplicit-function-declaration]
+  printf("I am the parent %d\n",getpid());
+[01;32m[K                                ^[m[K
+[01m[Kavg_server.c:41:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwait[m[K’ [-Wimplicit-function-declaration]
+     if (wait(NULL) < 0)
+[01;32m[K         ^[m[K
+[01m[Kavg_server.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kavg_server.c:51:14:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfork[m[K’ [-Wimplicit-function-declaration]
+  pid_t pid = fork();
+[01;32m[K              ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexeclp[m[K’ [-Wimplicit-function-declaration]
+   execlp("./client", "./client", NULL);
+[01;32m[K   ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+[01m[Kavg_server.c:73:4:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+    execlp("./client", "./client", NULL);
+[01;32m[K    ^[m[K
+[01m[Kavg_server.c:86:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+     execlp("./client", "./client", NULL);
+[01;32m[K     ^[m[K
+[01m[Kavg_server.c:98:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+      execlp("./client", "./client", NULL);
+[01;32m[K      ^[m[K
+[01m[Kavg_server.c:110:2:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwrite[m[K’ [-Wimplicit-function-declaration]
+  write(fd1[0], argv[1], strlen(argv[1]));
+[01;32m[K  ^[m[K
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ ./server
+I am client #1!
+I am the parent 7048
+I am client #3!
+I am the parent 7051
+Child Complete
+ERROR
+Child Complete
+I am the parent 7048
+I am client #2!
+I am client #4!
+I am the parent 7052
+ERROR
+Child Complete
+I am the parent 7052
+ERROR
+Child Complete
+Child Complete
+I am the parent 7048
+Child Complete
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ ./servergcc avg_server.c -o serveer[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [16P./server
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc avg_server.c -o serveer
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd1); //creating 1st pipe
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:30:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd2);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:31:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd3);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:32:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kdata definition has no type or storage class
+ pipe(fd4);
+[01;32m[K ^[m[K
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Ktype defaults to ‘[01m[Kint[m[K’ in declaration of ‘[01m[Kpipe[m[K’ [-Wimplicit-int]
+[01m[Kavg_server.c:33:1:[m[K [01;35m[Kwarning: [m[Kparameter names (without types) in function declaration
+[01m[Kavg_server.c:[m[K In function ‘[01m[KwaitForChillun[m[K’:
+[01m[Kavg_server.c:40:32:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kgetpid[m[K’ [-Wimplicit-function-declaration]
+  printf("I am the parent %d\n",getpid());
+[01;32m[K                                ^[m[K
+[01m[Kavg_server.c:41:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwait[m[K’ [-Wimplicit-function-declaration]
+     if (wait(NULL) < 0)
+[01;32m[K         ^[m[K
+[01m[Kavg_server.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kavg_server.c:51:14:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfork[m[K’ [-Wimplicit-function-declaration]
+  pid_t pid = fork();
+[01;32m[K              ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexeclp[m[K’ [-Wimplicit-function-declaration]
+   execlp("./client", "./client", NULL);
+[01;32m[K   ^[m[K
+[01m[Kavg_server.c:60:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+[01m[Kavg_server.c:73:4:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+    execlp("./client", "./client", NULL);
+[01;32m[K    ^[m[K
+[01m[Kavg_server.c:86:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+     execlp("./client", "./client", NULL);
+[01;32m[K     ^[m[K
+[01m[Kavg_server.c:98:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexeclp[m[K’
+      execlp("./client", "./client", NULL);
+[01;32m[K      ^[m[K
+[01m[Kavg_server.c:102:6:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwrite[m[K’ [-Wimplicit-function-declaration]
+      write(fd4[0], argv[1], strlen(argv[1]));
+[01;32m[K      ^[m[K
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ gcc avg_server.c -o serveer[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ [16P./server
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+I am client #1!
+I am client #2!
+I am client #3!
+I am client #4!
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab3/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab3/task4[00m$ exit
+exit
+
+Script done on Tue 20 Sep 2016 11:51:19 AM PDT

@@ -1,0 +1,11 @@
+1. Page size of operating system: 4096
+
+2. The range of offset values that are valid for accessing the content of your files is 0 - 22662
+
+3. What causes the program to crash when certain offset values are tried?
+
+Anything below 4096, which is the SC_PAGESIZE value given to the pagesize to use, will cause the program to crash with a segmentation fault. Before it even hits the error for if the data is less than the page size, it gives a seg fault. The OS works with pages, so if the length of the offset is less than the page length, it will raise it automatically.
+
+4. For what values does the program not crash?
+
+Less than 4096, which is the size of the page assigned to the process. 

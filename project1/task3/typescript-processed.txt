@@ -1,0 +1,57 @@
+Script started on Tue 22 Nov 2016 11:51:44 AM PST
+kg-config@fuseo--cflags:--libs`e-oshello362/project1/task3$ gcc -Wall hello.c `p
+gcc: error: hello.c: No such file or directory
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ ls
+CMakeLists.txt	file.c				main.cpp    typescript.txt
+file		JoshuaStewardProject1Task3.zip	PedroTask3
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ ls
+CMakeLists.txt	file.c				main.cpp    typescript.txt
+file		JoshuaStewardProject1Task3.zip	PedroTask3
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ cd ..
+cistudent@NetworkingLab:~/Documents/comp362/project1$ ls
+task1  task2  task3  task4  task5
+cistudent@NetworkingLab:~/Documents/comp362/project1$ cd task3
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ ls
+CMakeLists.txt	file.c				main.cpp    typescript.txt
+file		JoshuaStewardProject1Task3.zip	PedroTask3
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ ls
+CMakeLists.txt	file.c				main.cpp    typescript.txt
+file		JoshuaStewardProject1Task3.zip	PedroTask3
+cistudent@NetworkingLab:~/Documents/comp362/project1/task3$ cd
+cistudent@NetworkingLab:~$ ls
+bin	 Documents  examples.desktop  Pictures	Templates   Videos
+Desktop  Downloads  Music	      Public	typescript
+cistudent@NetworkingLab:~$ cd Documents'
+cistudent@NetworkingLab:~/Documents$ ls
+clion-2016.2.2	comp362
+cistudent@NetworkingLab:~/Documents$ cd comp362
+cistudent@NetworkingLab:~/Documents/comp362$ ls
+commands  inTheBeginning  lab3	lab5  lab7  lab9      lect06code
+init	  lab2		  lab4	lab6  lab8  lec4Code  project1
+cistudent@NetworkingLab:~/Documents/comp362$ cd project1
+cistudent@NetworkingLab:~/Documents/comp362/project1$ ls
+task1  task2  task3  task4  task5
+cistudent@NetworkingLab:~/Documents/comp362/project1$ cd task2
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls
+CMakeLists.txt	hello  hello.c	JoshuaStewardProject1Task2.zip	main.cpp
+kg-config@fuseo--cflags:--libs`e-oshello362/project1/task2$ gcc.-Wallnhello.c `pk
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ mkdir tmp
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ./hello tmp/
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls tmp/
+hello  nope  planet
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls tmp/
+hello  nope  planet
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls tmp/ hello
+hello
+
+tmp/:
+hello  nope  planet
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ cat tmp/hello
+Hello World!
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ exit
+exit
+
+Script done on Tue 22 Nov 2016 11:53:55 AM PST

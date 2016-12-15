@@ -1,0 +1,33 @@
+Script started on Tue 20 Sep 2016 02:11:31 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ ./fTest
+Start time: Tue Sep 20 14:11:35 2016
+
+End time: Tue Sep 20 14:11:45 2016
+
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ ./fTest = output
+Start time: Tue Sep 20 14:11:58 2016
+
+End time: Tue Sep 20 14:12:08 2016
+
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ lscT-sttypscript.txt
+forkCreationTest.c  fTest  threadCreationTest.c  tTest	typescript.txt
+c-ottTest@-lpthreadgLab:~/Documents/comp362/lab4/task1$ gcc threadCreationTest.c
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ ./tTest
+Start time: Tue Sep 20 14:12:58 2016
+
+End time: Tue Sep 20 14:13:03 2016
+
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ ./tTest
+Start time: Tue Sep 20 14:13:22 2016
+
+End time: Tue Sep 20 14:13:27 2016
+
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ ./tTest
+Start time: Tue Sep 20 14:13:32 2016
+
+End time: Tue Sep 20 14:13:38 2016
+
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task1$ exit
+exit
+
+Script done on Tue 20 Sep 2016 02:13:40 PM PDT

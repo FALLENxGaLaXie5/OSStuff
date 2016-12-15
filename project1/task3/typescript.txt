@@ -1,0 +1,57 @@
+Script started on Tue 22 Nov 2016 11:51:44 AM PST
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ gcc [K[K[K[Kgcc -Wall hello.c `p kg-config fuse --cflags --libs` -o hello
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Khello.c: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ ls
+CMakeLists.txt  file.c                          main.cpp    typescript.txt
+[0m[01;32mfile[0m            [01;31mJoshuaStewardProject1Task3.zip[0m  [01;34mPedroTask3[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ ls
+CMakeLists.txt  file.c                          main.cpp    typescript.txt
+[0m[01;32mfile[0m            [01;31mJoshuaStewardProject1Task3.zip[0m  [01;34mPedroTask3[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ cd ..
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1[00m$ ls
+[0m[01;34mtask1[0m  [01;34mtask2[0m  [01;34mtask3[0m  [01;34mtask4[0m  [01;34mtask5[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1[00m$ cd task3
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ ls
+CMakeLists.txt  file.c                          main.cpp    typescript.txt
+[0m[01;32mfile[0m            [01;31mJoshuaStewardProject1Task3.zip[0m  [01;34mPedroTask3[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ ls
+CMakeLists.txt  file.c                          main.cpp    typescript.txt
+[0m[01;32mfile[0m            [01;31mJoshuaStewardProject1Task3.zip[0m  [01;34mPedroTask3[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task3[00m$ cd 
+]0;cistudent@NetworkingLab: ~[01;32mcistudent@NetworkingLab[00m:[01;34m~[00m$ ls
+[0m[01;34mbin[0m      [01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mTemplates[0m   [01;34mVideos[0m
+[01;34mDesktop[0m  [01;34mDownloads[0m  [01;34mMusic[0m             [01;34mPublic[0m    typescript
+]0;cistudent@NetworkingLab: ~[01;32mcistudent@NetworkingLab[00m:[01;34m~[00m$ cd Documents'[K
+]0;cistudent@NetworkingLab: ~/Documents[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents[00m$ ls
+[0m[01;34mclion-2016.2.2[0m  [01;34mcomp362[0m
+]0;cistudent@NetworkingLab: ~/Documents[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents[00m$ cd comp362
+]0;cistudent@NetworkingLab: ~/Documents/comp362[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362[00m$ ls
+[0m[01;34mcommands[0m  [01;34minTheBeginning[0m  [01;34mlab3[0m  [01;34mlab5[0m  [01;34mlab7[0m  [01;34mlab9[0m      [01;34mlect06code[0m
+[01;34minit[0m      [01;34mlab2[0m            [01;34mlab4[0m  [01;34mlab6[0m  [01;34mlab8[0m  [01;34mlec4Code[0m  [01;34mproject1[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362[00m$ cd project1
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1[00m$ ls
+[0m[01;34mtask1[0m  [01;34mtask2[0m  [01;34mtask3[0m  [01;34mtask4[0m  [01;34mtask5[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1[00m$ cd task2
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls
+CMakeLists.txt  [0m[01;32mhello[0m  hello.c  [01;31mJoshuaStewardProject1Task2.zip[0m  main.cpp
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ lscd task2ls[Kcd project1ls[Kcd comp362ls[Kcd Documentsls[Kcd [1Plscd task3ls[Kcd ..[3Plsgcc -Wall hello.c `pkkg-config fuse --cflags --libs` -o hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ mkdir tmp
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ./hello tmp/
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls tmp/
+hello  nope  planet
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls tmp/
+hello  nope  planet
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls tmp/ hello
+[0m[01;32mhello[0m
+
+tmp/:
+hello  nope  planet
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ cat tmp/hello
+Hello World!
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ exit
+exit
+
+Script done on Tue 22 Nov 2016 11:53:55 AM PST

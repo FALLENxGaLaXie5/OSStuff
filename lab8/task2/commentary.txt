@@ -1,0 +1,51 @@
+Joshua Steward
+10/20/2016
+Lab 8 Task 2
+
+TypeScript:
+
+
+
+Script started on Thu 20 Oct 2016 01:33:30 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task2$ ls
+CMakeLists.txt	libgiveMeNum.so  readMe.txt	  typescript
+giveMeNum.c	main.cpp	 testDyLibMain.c
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task2$ gcc *.c -o testNoLib
+/tmp/cc0MhhBF.o: In function `main':
+testDyLibMain.c:(.text+0x1a): undefined reference to `dlopen'
+testDyLibMain.c:(.text+0x2a): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x55): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x66): undefined reference to `dlsym'
+testDyLibMain.c:(.text+0x7d): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0xcf): undefined reference to `dlclose'
+collect2: error: ld returned 1 exit status
+rtfilesn-oNlibgiveMeNum.soDgiveMeNum.cmp362/lab8/task2$ gcc -fPIC -shared -nosta
+ibMainetestDyLibMain.cb-ldlocuments/comp362/lab8/task2$ gcc -rdynamic -o testDyL
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task2$ nm libgiveMeNum.so
+0000000000201030 D __bss_start
+0000000000200ed0 d _DYNAMIC
+0000000000201030 D _edata
+0000000000201030 D _end
+0000000000000450 T giveMeNum
+0000000000201000 d _GLOBAL_OFFSET_TABLE_
+00000000000004bc r __GNU_EH_FRAME_HDR
+		 U __isoc99_scanf@@GLIBC_2.7
+		 U puts@@GLIBC_2.2.5
+		 U __stack_chk_fail@@GLIBC_2.4
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task2$ exit
+exit
+
+Script done on Thu 20 Oct 2016 01:40:57 PM PDT
+
+
+
+
+1. When compiled, it doesn't compile due to a bunch of undefined references to functions in dlfcn library.
+These references are expecting to be linked dynamically, and by default they are linked statically; thus causing
+these compilation errors.
+
+2. Created dynamic library from giveMeNum.c.
+
+3. Compiled the program with the dynamic library. This means the library won't be linked until execution.
+
+4. Verified - dynamically linked library created and compiled with the programs.

@@ -1,0 +1,25 @@
+0 Current page- 0, Page # 1 Created at 3
+
+1 Current page- 0, Page # 2 Created at 7
+
+2 Current page- 0, 
+3 Current page- 1, 
+4 Current page- 0, Page # 3 Created at 5
+
+5 Current page- 3, 
+6 Current page- 0, Page # 4 Created at 2
+
+7 Current page- 2, 
+8 Current page- 0, Page # 5 Created at 1
+
+9 Current page- 0, 
+Pid: 2 - Page number: 5, - Physical Address: 11 - Valid; adding to physical memory
+
+Pid: 9 - Page number: 4, - Physical Address: 15 - Valid; adding to physical memory
+
+Pid: 6 - Page number: 1, - Physical Address: 19 - Valid; adding to physical memory
+
+Pid: 26 - Page number: 3, - Physical Address: 27 - Valid; adding to physical memory
+
+Pid: 35 - Page number: 2, - Physical Address: 35 - Valid; adding to physical memory
+

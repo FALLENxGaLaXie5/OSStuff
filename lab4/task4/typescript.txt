@@ -1,0 +1,56 @@
+Script started on Tue 27 Sep 2016 11:48:05 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ exitgcc matrixDy.c -o matrix  -lpthread[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc matrixDy.c -o matrix  -lpthread
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[KmatrixDy.c: No such file or directory
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ ls
+CMakeLists.txt  [0m[01;31mJoshuaStewardLab4Task4.zip[0m  [01;32mmatrix[0m       typescript
+input.txt       main.cpp                    matrixDyD.c  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ lsgcc matrixDy.c -o matrix  -lpthread[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc matrixDy.c -o matrix  -lpthread[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd task4ls[Kcd ..[3Pls[K[Kgcc matrixDyD.c -o matri x lptjhread[K[K[K[K[K[Khread[K[K[K[K[K[K[K[K[K[Kx -lpthread
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ gdb ,a[K[Kmatrix
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from matrix...(no debugging symbols found)...done.
+(gdb) run input.txt
+Starting program: /home/cistudent/Documents/comp362/lab4/task4/matrix input.txt
+5
+4
+2
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000040092d in allocateAndLoadMatrices ()
+(gdb) up
+#1  0x0000000000400bb9 in main ()
+(gdb) down
+#0  0x000000000040092d in allocateAndLoadMatrices ()
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6800] will be killed.
+
+Quit anyway? (y or n) y
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ ls
+CMakeLists.txt  [0m[01;31mJoshuaStewardLab4Task4.zip[0m  [01;32mmatrix[0m       typescript
+input.txt       main.cpp                    matrixDyD.c  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ e[K./matrxi[K[Kix input.txt
+5
+4
+2
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task4[00m$ qu[K[Kexit
+exit
+
+Script done on Tue 27 Sep 2016 11:49:59 AM PDT

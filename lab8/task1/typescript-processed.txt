@@ -1,0 +1,33 @@
+Script started on Thu 20 Oct 2016 01:04:51 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ gcc *.cg-oetestNoLib
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ ls
+CMakeLists.txt	main.cpp   testStatLibMain.c
+giveMeNum.c	testNoLib  typescript.txt
+'s/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g'3|2colb-b scriptstypescript.txtd.txt-pe '
+'s/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b lstypescript-processed.txt
+./testNoLibtestNoLib
+Give me a number:
+10
+You gave me : 10
+m.otudent@NetworkingLab:~/Documents/comp362/lab8$ gcc -c giveMeNum.c -o giveMeNu
+m.otudent@NetworkingLab:~/Documents/comp362/lab8$ ar rcs libgiveMeNum.a giveMeNu
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ nm libgiveMeNum.a
+
+giveMeNum.o:
+0000000000000000 T giveMeNum
+		 U __isoc99_scanf
+		 U puts
+		 U __stack_chk_fail
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ arcttlibgiveMeNum.a.c -
+giveMeNum.o
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ gcc testStatLibMain.c -
+gcc: error: -E or -x required when input is from standard input
+veMeNumn-oNtestStatLibb:~/Documents/comp362/lab8$ gcc testStatLibMain.c -L. -lgi
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ ./testStatLib
+Give me a number:
+10
+You gave me : 10
+cistudent@NetworkingLab:~/Documents/comp362/lab8$ exit
+exit
+
+Script done on Thu 20 Oct 2016 01:18:55 PM PDT

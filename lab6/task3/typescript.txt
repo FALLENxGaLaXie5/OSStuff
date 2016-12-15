@@ -1,0 +1,13 @@
+Script started on Tue 11 Oct 2016 11:46:11 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ ls
+CMakeLists.txt  main.cpp  [0m[01;32mphil[0m  philoBase.c  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ lsexit./phil 10 30 > output.txtt[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5 10 > output.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc philoBase.c -o phil --lpthread[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc philoBase.c -o phil --lpthread
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ gcc philoBase.c -o phil --lpthread[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit./phil 10 30 > output.txtt
+Segmentation fault (core dumped)
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab6/task3[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab6/task3[00m$ exit
+exit
+
+Script done on Tue 11 Oct 2016 11:46:27 AM PDT

@@ -1,0 +1,5 @@
+Playing with pages of size 4096
+Enter file name: Enter file offset between 0 and 22662: Byte at offset 7002 is '
+'
+Enter a character to substitute in: 
+Byte at offset 7002 is 't'

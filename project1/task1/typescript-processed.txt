@@ -1,0 +1,52 @@
+Joshua Steward
+Project 1 Task 1
+11/3/2016
+
+
+Script started on Thu 03 Nov 2016 01:33:11 PM PDT
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ lsript typescript.txt
+kg-confignfuseo--cflags --libs` -o hello
+mp/t$dent@NetworkingLab:~/Documents/comp362/project1/task1$ mkdir tmp $./hello t
+mkdir: cannot create directory ‘$./hello’: No such file or directory
+mkdir: cannot create directory ‘tmp/’: File exists
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ mkdir tmp
+mkdir: cannot create directory ‘tmp’: File exists
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ mkdir tmp
+mkdir: cannot create directory ‘tmp’: File exists
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ mkdir tree
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls
+$  CMakeLists.txt  hello  hello.c  main.cpp  tmp  tree	typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ./hello tree/
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls
+$  CMakeLists.txt  hello  hello.c  main.cpp  tmp  tree	typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ cd tree
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1/tree$ ls
+hello
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1/tree$ ./hello
+bash: ./hello: Permission denied
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1/tree$ cd ..
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls
+$  CMakeLists.txt  hello  hello.c  main.cpp  tmp  tree	typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls tree/
+hello
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ./hello tree/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ sudo umount tree
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ lsdir tree
+$  CMakeLists.txt  hello  hello.c  main.cpp  tmp  tree	typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ mkdir tree
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls
+CMakeLists.txt	hello  hello.c	main.cpp  tree	typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ./hello tree/
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ls tree/
+hello
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ ./hello tree/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ cat tree/hello
+Hello World!
+cistudent@NetworkingLab:~/Documents/comp362/project1/task1$ exit
+exit
+
+Script done on Thu 03 Nov 2016 01:43:56 PM PDT

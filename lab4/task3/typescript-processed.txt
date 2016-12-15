@@ -1,0 +1,35 @@
+Script started on Tue 27 Sep 2016 02:14:53 AM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ ls
+CMakeLists.txt	input.txt  matrix  matrixDy.c  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ gcc matrixDy.c -o matrix-lpythread
+/usr/bin/ld: cannot find -lpythread
+collect2: error: ld returned 1 exit status
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ gcc matrixDy.c -o matrix -lpthread
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ ./matrix input.txt
+5
+4
+2
+
+0 0 1 6
+1 2 3 5
+0 4 3 9
+5 0 3 4
+7 1 2 1
+
+3 1
+10 3
+2 9
+10 2
+
+62 21
+79 44
+136 57
+61 40
+45 0
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ ./matrix input.txt > output.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ ls
+CMakeLists.txt	input.txt  matrix  matrixDy.c  output.txt  typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab4/task3$ exit
+exit
+
+Script done on Tue 27 Sep 2016 02:16:16 AM PDT

@@ -1,0 +1,23 @@
+Script started on Tue 22 Nov 2016 11:55:12 AM PST
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ gcc -Wall hello.c `p kg-config fuse --cflags --libs` -o hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ mkdir tmp
+mkdir: cannot create directory ‘tmp’: File exists
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls tmp/
+hello  nope  planet
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ ls tmp/h[K hello
+[0m[01;32mhello[0m
+
+tmp/:
+hello  nope  planet
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ cat tmp/hello
+Hello World!
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task2[00m$ exit
+exit
+
+Script done on Tue 22 Nov 2016 11:56:08 AM PST

@@ -1,0 +1,9 @@
+
+REQUEST: 
+Expected input: Q | ST | [BO | RE] <customer number> <resource #1> <#2> <#3> ...
+
+REQUEST: Q
+ Available = []
+Allocation = 
+       Max = 
+      Need = 

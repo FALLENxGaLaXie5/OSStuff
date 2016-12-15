@@ -1,0 +1,49 @@
+Joshua Steward
+9/28/2016
+Lab 4 Task 1 Commentary
+
+
+
+
+
+The thread and fork both run the sam algorithm, and the number of processes created is the same number of threads created. So this should measure the efficiency of running processes vs. the efficiency of running threads
+
+Fork Test Run #1
+
+Start time: Tue Sep 20 14:11:35 2016
+
+End time: Tue Sep 20 14:11:45 2016
+
+Fork Test Run #2
+
+
+Start time: Tue Sep 20 14:11:58 2016
+
+End time: Tue Sep 20 14:12:08 2016
+
+
+
+
+Thread Test Run #1
+
+Start time: Tue Sep 20 14:12:58 2016
+
+End time: Tue Sep 20 14:13:03 2016
+
+
+Thread Test Run #2
+
+Start time: Tue Sep 20 14:13:22 2016
+
+End time: Tue Sep 20 14:13:27 2016
+
+Thread Test Run #3
+
+
+Start time: Tue Sep 20 14:13:32 2016
+
+End time: Tue Sep 20 14:13:38 2016
+
+
+So, the Threads consistently run at 5 seconds while the processes consistently finish at 10. This is a very high number of executed processes/threads so that it could be measured in seconds, but it does clearly illustrate that threads take about half the time to execute than processes.
+

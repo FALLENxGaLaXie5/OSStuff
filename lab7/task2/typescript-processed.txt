@@ -1,0 +1,15 @@
+Script started on Tue 18 Oct 2016 11:52:24 AM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab7/task2$ ls
+arrays.c  bank.c  CMakeLists.txt  main.cpp    readMe.txt  testSolvency.c  -Wall
+arrays.h  bank.h  in.txt	  output.txt  test	  typescript.txt
+ciarrays.cN-owtestn-Wall~/Documents/comp362/lab7/task2$ gccetestSolvency.c bank.c
+cistudent@NetworkingLab:~/Documents/comp362/lab7/task2$ lsc testSolvency.c bank.c
+./test in.txt
+ST 15 1 5
+
+*** stack smashing detected ***: ./test terminated
+Aborted (core dumped)
+cistudent@NetworkingLab:~/Documents/comp362/lab7/task2$ exit
+exit
+
+Script done on Tue 18 Oct 2016 11:52:41 AM PDT

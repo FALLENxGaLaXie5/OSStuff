@@ -1,0 +1,33 @@
+Script started on Tue 20 Sep 2016 02:11:31 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./fTest
+Start time: Tue Sep 20 14:11:35 2016
+
+End time: Tue Sep 20 14:11:45 2016
+
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./fTest > output[K[K[K[K[K[K[K[K=[K[K
+Start time: Tue Sep 20 14:11:58 2016
+
+End time: Tue Sep 20 14:12:08 2016
+
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./fTestscript typscript.txt./proc[K[4Plscd task1ls[Kcd lab3ls[Kcd comp362ls[Kcd Documentsls[Kexit./procsend & ./receivels[Kcd task3ls[K./send & ./receiveproc[K[2Pexit[2Plscd Documentsls[Kcd comp362ls[Kcd lab3ls[Kcd task1ls[K./procscript typscript.txt[13P./fTest[Kgcc [K[K[K[Kgcc -[K[K[K[K[Kls
+forkCreationTest.c  [0m[01;32mfTest[0m  threadCreationTest.c  [01;32mtTest[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ gcc threadCreationTest.c  -o tTest -lpthread
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./tTest
+Start time: Tue Sep 20 14:12:58 2016
+
+End time: Tue Sep 20 14:13:03 2016
+
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./tTest
+Start time: Tue Sep 20 14:13:22 2016
+
+End time: Tue Sep 20 14:13:27 2016
+
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ ./tTest
+Start time: Tue Sep 20 14:13:32 2016
+
+End time: Tue Sep 20 14:13:38 2016
+
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task1[00m$ exit
+exit
+
+Script done on Tue 20 Sep 2016 02:13:40 PM PDT

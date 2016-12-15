@@ -1,0 +1,19 @@
+Vert 0: Aa
+Vert 1: Bbb
+Vert 2: Cccc
+Vert 3: Ddddd
+Aa - Cccc
+Aa - Ddddd
+Bbb - Cccc
+Cccc - Bbb
+Cccc - Ddddd
+Ddddd - Aa
+Ddddd - Cccc
+
+0 0 1 1 
+0 0 1 0 
+0 1 0 1 
+1 0 1 0 
+Checking for cycle from 0, 2
+CYCLE DETECTED!!!! ALERT ALERT ALERT!
+>> DEADLOCKED <<

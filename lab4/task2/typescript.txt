@@ -1,0 +1,38 @@
+Script started on Tue 27 Sep 2016 01:25:53 AM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ ls
+CMakeLists.txt  input.txt                   [0m[01;32mmain[0m      [01;32mmatrix[0m    [01;32mtest[0m
+core            [01;31mJoshuaStewardLab4Task2.zip[0m  main.cpp  matrix.c  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ ls./main input.txtgcc main.cpp -o main[4P./main input.txtls[K[Kls./main input.txtgcc main.cpp -o mainls[K./matrix input.txtgcc matrix.c -o matrixls[Kgcc matrix.c -o matrix
+/tmp/ccUMoLpG.o: In function `multiply':
+matrix.c:(.text+0x31d): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ gcc matrix.c -o matrix -lpthreads[K
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ gcc matrix.c -o matrix -lpthread[Kls[K./main input.txtls[Kgcc matrix.c -o matrix -lpthread[K./matrix input.txt
+5
+4
+2
+
+0 0 1 6 
+1 2 3 5 
+2 4 3 9 
+5 0 3 4 
+7 1 1 1 
+
+0 1 
+1 3 
+2 9 
+3 1 
+
+20 15 
+23 39 
+37 50 
+18 36 
+6 20 
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ ./matrix input.txt > output.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ ls
+CMakeLists.txt  input.txt                   [0m[01;32mmain[0m      [01;32mmatrix[0m    output.txt  typescript.txt
+core            [01;31mJoshuaStewardLab4Task2.zip[0m  main.cpp  matrix.c  [01;32mtest[0m
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab4/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab4/task2[00m$ exit
+exit
+
+Script done on Tue 27 Sep 2016 01:29:22 AM PDT

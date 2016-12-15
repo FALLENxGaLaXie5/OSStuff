@@ -1,0 +1,47 @@
+Script started on Thu 03 Nov 2016 01:33:11 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ script typescript.txtt[A]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd task2ls[Kcd lab9ls[Kcd comp362ls[Kcd Documentsls[K;sexitgcc *c -o mainexit[Kgcc *c -o mainexit[K[K[K[K[Kgcc -Wall hello.c `p kg-config fuse --cflags --libs` -o hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir tmp $./hello t mp/ $
+mkdir: cannot create directory ‘$./hello’: No such file or directory
+mkdir: cannot create directory ‘tmp/’: File exists
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir tmp [K
+mkdir: cannot create directory ‘tmp’: File exists
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir tmp
+mkdir: cannot create directory ‘tmp’: File exists
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir myD[K[K[Ku[K[K tree
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls
+[0m[01;34m$[0m  CMakeLists.txt  [01;32mhello[0m  hello.c  main.cpp  [01;34mtmp[0m  [01;34mtree[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ./hello tree/
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls
+[0m[01;34m$[0m  CMakeLists.txt  [01;32mhello[0m  hello.c  main.cpp  [01;34mtmp[0m  [01;34mtree[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ cd tree[K[K[K[Ktree
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1/tree[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1/tree[00m$ ls
+hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1/tree[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1/tree[00m$ ./hello
+bash: ./hello: Permission denied
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1/tree[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1/tree[00m$ cd ..
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls
+[0m[01;34m$[0m  CMakeLists.txt  [01;32mhello[0m  hello.c  main.cpp  [01;34mtmp[0m  [01;34mtree[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls tree/
+hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ./hello tree/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ sudo umount tree
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir tree[K[K[K[K[K[K[K[K[K[Kls
+[0m[01;34m$[0m  CMakeLists.txt  [01;32mhello[0m  hello.c  main.cpp  [01;34mtmp[0m  [01;34mtree[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ mkdir tree
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls
+CMakeLists.txt  [0m[01;32mhello[0m  hello.c  main.cpp  [01;34mtree[0m  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ./hello tree/
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ls tree/
+hello
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ ./hello tree/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ cat [K tree/hello [K
+Hello World!
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task1[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task1[00m$ exit
+exit
+
+Script done on Thu 03 Nov 2016 01:43:56 PM PDT

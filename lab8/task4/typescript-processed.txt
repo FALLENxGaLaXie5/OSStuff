@@ -1,0 +1,112 @@
+Script started on Tue 25 Oct 2016 11:33:03 AM PDT
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ ls
+CMakeLists.txt	invert.c      invert.o	       libinvert.a  test
+invert		invertMain.c  invertTabPage.h  main.cpp     typescript.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ arctilibinvert.a -L. -lin
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ ar t libinvert.a
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ gcc -c invert.c -o
+
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ lsc -c invert.c -o invert
+t.orcs libinvert.a inver
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ nm libinvert.a
+
+invert.o:
+0000000000000000 T initInverted
+000000000000001c C invTablePage
+		 U printf
+		 U putchar
+		 U puts
+		 U rand
+000000000000032b T releaseInverted
+000000000000024e T translate
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ ar t libinvert.a
+invert.o
+ivetudent@NetworkingLab:~/Documents/comp362/lab8/task3$ gcc invertMain.c -L. -lg
+nvert -o test
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ ./test
+0 Current page- 0, Page # 1 Created at 3
+
+1 Current page- 0, Page # 2 Created at 7
+
+2 Current page- 0,
+3 Current page- 1,
+4 Current page- 0, Page # 3 Created at 5
+
+5 Current page- 3,
+6 Current page- 0, Page # 4 Created at 2
+
+7 Current page- 2,
+8 Current page- 0, Page # 5 Created at 1
+
+9 Current page- 0,
+Pid: 2 - Page number: 5, - Physical Address: 11 - Valid; adding to physical memory
+
+Pid: 9 - Page number: 4, - Physical Address: 15 - Valid; adding to physical memory
+
+Pid: 6 - Page number: 1, - Physical Address: 19 - Valid; adding to physical memory
+
+Pid: 26 - Page number: 3, - Physical Address: 27 - Valid; adding to physical memory
+
+Pid: 35 - Page number: 2, - Physical Address: 35 - Valid; adding to physical memory
+
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ gcc -v *.c
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.2' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2)
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/cc1 -quiet -v -imultiarch x86_64-linux-gnu invert.c -quiet -dumpbase invert.c -mtune=generic -march=x86-64 -auxbase invert -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccGgUhIo.s
+GNU C11 (Ubuntu 5.4.0-6ubuntu1~16.04.2) version 5.4.0 20160609 (x86_64-linux-gnu)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/5/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C11 (Ubuntu 5.4.0-6ubuntu1~16.04.2) version 5.4.0 20160609 (x86_64-linux-gnu)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: eb080614e8c0415bfb1aad7fb88ffefc
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o /tmp/ccK7Noy2.o /tmp/ccGgUhIo.s
+GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/cc1 -quiet -v -imultiarch x86_64-linux-gnu invertMain.c -quiet -dumpbase invertMain.c -mtune=generic -march=x86-64 -auxbase invertMain -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccGgUhIo.s
+GNU C11 (Ubuntu 5.4.0-6ubuntu1~16.04.2) version 5.4.0 20160609 (x86_64-linux-gnu)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/5/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C11 (Ubuntu 5.4.0-6ubuntu1~16.04.2) version 5.4.0 20160609 (x86_64-linux-gnu)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: eb080614e8c0415bfb1aad7fb88ffefc
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o /tmp/cc7OyxsG.o /tmp/ccGgUhIo.s
+GNU assembler version 2.26.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.26.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWFrTnk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. /tmp/ccK7Noy2.o /tmp/cc7OyxsG.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ ./test > output.txt
+cistudent@NetworkingLab:~/Documents/comp362/lab8/task3$ exit
+exit
+
+Script done on Tue 25 Oct 2016 11:35:15 AM PDT

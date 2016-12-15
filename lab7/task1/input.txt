@@ -1,0 +1,2 @@
+V={Aa, Bbb, Cccc, Ddddd}
+E={{Aa, Bbb}, {Bbb, Ddddd}, {Ddddd, Cccc}}

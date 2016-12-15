@@ -1,0 +1,55 @@
+Script started on Tue 22 Nov 2016 11:42:52 AM PST
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task4[00m$ ./filegcc table.c file.c -oo file
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task4[00m$ gcc table.c file.c -oo file[A]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task4[00m$ ./file[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+SuperBlock and Super Index created successfully!
+Your new directory has been created at memory location 2
+this is the new directory's index block position 3
+Your new directory has been created at memory location 4
+this is the new directory's index block position 5
+Type: 0
+Name: 
+Size: 0
+Owner: 0
+Creation time: 1479843777
+Last Access Time: 1479843777
+Last Modification: 1479843777
+Access Rights: (600)
+Type: 0
+Name: 
+Size: 0
+Owner: 0
+Creation time: 1479843777
+Last Access Time: 1479843777
+Last Modification: 1479843777
+Access Rights: (600)
+Your new file has been created at memory location 6
+this is the files index block position 7
+Your new file has been created at memory location 9
+this is the files index block position 10
+Your new file has been created at memory location 12
+this is the files index block position 13
+Enter new data (max 254 chars/bytes):
+Hi t   there!
+Data Node 0 contains: 
+Data Node 1 contains: Hi
+Your new file has been created at memory location 16
+this is the files index block position 17
+Your new file has been created at memory location 19
+this is the files index block position 20
+Your new file has been created at memory location 22
+this is the files index block position 23
+Deleted the file at memory location: 16
+Deleted file index block location 17
+Deleted the file at memory location: 19
+Deleted file index block location 20
+Deleted the file at memory location: 22
+Deleted file index block location 23
+Deleted dir at location 4
+Deleted dir index at location 5
+Deleted the file at memory location: 6
+Deleted file index block location 7
+]0;cistudent@NetworkingLab: ~/Documents/comp362/project1/task4[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/project1/task4[00m$ exit
+exit
+
+Script done on Tue 22 Nov 2016 11:43:07 AM PST

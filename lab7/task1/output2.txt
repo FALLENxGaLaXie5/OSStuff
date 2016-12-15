@@ -1,0 +1,16 @@
+Vert 0: Aa
+Vert 1: Bbb
+Vert 2: Cccc
+Vert 3: Ddddd
+Aa - Bbb
+Bbb - Ddddd
+Ddddd - Cccc
+
+0 1 0 0 
+0 0 0 1 
+0 0 0 0 
+0 0 1 0 
+Checking for cycle from 0, 1
+Checking for cycle from 1, 3
+Checking for cycle from 3, 2
+>> NO DEADLOCK <<

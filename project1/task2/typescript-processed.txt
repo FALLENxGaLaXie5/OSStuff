@@ -1,0 +1,23 @@
+Script started on Tue 22 Nov 2016 11:55:12 AM PST
+kg-config@fuseo--cflags:--libs`e-oshello362/project1/task2$ gcc -Wall hello.c `p
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ mkdir tmp
+mkdir: cannot create directory ‘tmp’: File exists
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls tmp/
+hello  nope  planet
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ./hello tmp/
+fuse: mountpoint is not empty
+fuse: if you are sure this is safe, use the 'nonempty' mount option
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ ls tmp/hhello
+hello
+
+tmp/:
+hello  nope  planet
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ cat tmp/hello
+Hello World!
+cistudent@NetworkingLab:~/Documents/comp362/project1/task2$ exit
+exit
+
+Script done on Tue 22 Nov 2016 11:56:08 AM PST

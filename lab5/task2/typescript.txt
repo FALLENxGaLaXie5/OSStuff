@@ -1,0 +1,31 @@
+Script started on Thu 29 Sep 2016 02:40:47 PM PDT
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ ls
+CMakeLists.txt  [0m[01;32mpri[0m  pri.c  typescript  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ gcc pri-c[K[K.c -o pri -lpthre ad
+[01m[Kpri.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kpri.c:74:50:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 4 of ‘[01m[Kpthread_create[m[K’
+             pthread_create(&tid, &attr, &runner, myPriority);
+[01;32m[K                                                  ^[m[K
+In file included from [01m[Kpri.c:6:0[m[K:
+[01m[K/usr/include/pthread.h:233:12:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * restrict[m[K’ but argument is of type ‘[01m[KPRIORITY {aka enum <anonymous>}[m[K’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+[01;32m[K            ^[m[K
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ gcc pri.c -o pri -lpthreaad
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ gcc pri.c -o pri -lpthreaad[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[2Pls./exp input.txt > output..txt[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[2Plsgcc pri.c -o pri -lpthreaad[A]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./pri [K
+q
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ ./pri
+e
+g
+r
+
+d
+d
+q
+^C
+]0;cistudent@NetworkingLab: ~/Documents/comp362/lab5/task2[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/comp362/lab5/task2[00m$ exit
+exit
+
+Script done on Thu 29 Sep 2016 02:42:15 PM PDT
