@@ -1,0 +1,24 @@
+Number of open lanes is: 2
+Customer 1
+Apple 2.000000 3
+Ham 10.000000 1
+Customer 2
+Water 1.130000 10
+Chocolate 1.500000 2
+Tomato 2.450000 3
+Customer 3
+LotteryTicket 1.000000 5
+Customer 1
+Box 0.110000 6
+Soap 3.640000 1
+Shampoo 8.250000 1
+Potato 1.340000 2
+Customer 2
+Tape 2.450000 1
+Pen 1.340000 5
+Beet 1.060000 4
+Num of customers in this lane is 3
+Customer 1 finished - total price was $16.000000
+Customer 2 finished - total price was $Customer 2 finished - total price was $21.650000
+Total for this lane: 37.650000
+Num of customers in this lane is 2

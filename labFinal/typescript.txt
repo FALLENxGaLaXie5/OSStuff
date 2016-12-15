@@ -1,0 +1,56 @@
+Script started on Thu 15 Dec 2016 12:26:27 PM PST
+]0;cistudent@NetworkingLab: ~/Documents/OSStuff/labFinal[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/OSStuff/labFinal[00m$ ls
+CMakeLists.txt  fin.c      main.cpp    [0m[01;32msched[0m
+[01;32mfin[0m             input.txt  output.txt  typescript.txt
+]0;cistudent@NetworkingLab: ~/Documents/OSStuff/labFinal[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/OSStuff/labFinal[00m$ ls./fin input.txtgcc fin.c -o fin -lpthread [A
+]0;cistudent@NetworkingLab: ~/Documents/OSStuff/labFinal[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/OSStuff/labFinal[00m$ gcc fin.c -o fin -lpthread [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./fin input.txt
+Number of open lanes is: 2
+Customer 1
+Apple 2.000000 3
+Ham 10.000000 1
+Customer 2
+Water 1.130000 10
+Chocolate 1.500000 2
+Tomato 2.450000 3
+Customer 3
+LotteryTicket 1.000000 5
+Customer 1
+Box 0.110000 6
+Soap 3.640000 1
+Shampoo 8.250000 1
+Potato 1.340000 2
+Customer 2
+Tape 2.450000 1
+Pen 1.340000 5
+Beet 1.060000 4
+]0;cistudent@NetworkingLab: ~/Documents/OSStuff/labFinal[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/OSStuff/labFinal[00m$ ./fin input.txtgcc fin.c -o fin -lpthread [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11P./fin input.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Number of open lanes is: 2
+Customer 1
+Apple 2.000000 3
+Ham 10.000000 1
+Customer 2
+Water 1.130000 10
+Chocolate 1.500000 2
+Tomato 2.450000 3
+Customer 3
+LotteryTicket 1.000000 5
+Customer 1
+Box 0.110000 6
+Soap 3.640000 1
+Shampoo 8.250000 1
+Potato 1.340000 2
+Customer 2
+Tape 2.450000 1
+Pen 1.340000 5
+Beet 1.060000 4
+Num of customers in this lane is 3
+Customer 1 finished - total price was $16.000000
+Customer 1 finished - total price was $16.000000
+21.650000
+Total for this lane: 37.650000
+]0;cistudent@NetworkingLab: ~/Documents/OSStuff/labFinal[01;32mcistudent@NetworkingLab[00m:[01;34m~/Documents/OSStuff/labFinal[00m$ exit
+exit
+
+Script done on Thu 15 Dec 2016 12:26:43 PM PST
